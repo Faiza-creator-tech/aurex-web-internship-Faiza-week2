@@ -1,0 +1,52 @@
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }    
+}
+
+.project_card{
+    animation: fadeInUp 0.6s ease forwards;
+}
+/* strategy effects */
+.project_card:nth-child(1) { animation-delay: 0.1s; }
+.project_card:nth-child(2) { animation-delay: 0.2s; }
+.project_card:nth-child(3) { animation-delay: 0.3s; }
+.project_card:nth-child(4) { animation-delay: 0.4s; }
+
+.project_card{
+transition: transform 0.3s ease ,
+            box-shadow 0.3s ease ;
+}
+.project_card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-view {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.btn-view:hover{
+    transform: scale(1.05);
+    background-color:#8583ec;
+}
+.btn-view:active {
+    transform: scale(0.95);
+}
+nav a{
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color:#2563eb;
+}
+.skills-list li {
+    transition: transform 0.2s ease;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+}
