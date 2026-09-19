@@ -1,4 +1,6 @@
 # aurex-web-internship-Faiza-week2
+AUREX Week 2 Internship — Responsive personal portfolio built with CSS3, Flexbox, and Grid 
+# aurex-web-internship-Faiza-week2
 AUREX Week 2 Internship — Responsive personal portfolio built with CSS3, Flexbox, and Grid # AUREX Full-Stack Engineering Internship — Week 2
 
 **Intern Name:** Faiza
@@ -39,8 +41,8 @@ https://faiza-creator-tech.github.io/aurex-web-internship-Faiza-week2/
 
 **Intern Name:** Faiza
 **Domain:** Full-Stack Web Development
-**Week:** Week 3
-**Live Deployment Link:** 
+**Week:**Week 3
+**Live Deployment Link:**https://faiza-creator-tech.github.io/aurex-web-internship-Faiza-week2/ 
 
 ### 🎯 What Was Built
 This week, I upgraded my existing portfolio website by adding a new **Projects showcase section** using CSS Grid and animations.
