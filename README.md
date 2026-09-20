@@ -20,7 +20,7 @@ https://faiza-creator-tech.github.io/aurex-web-internship-Faiza-week2/
 | Desktop | Tablet | Mobile |
 |---|---|---|
 | !
-[desktop](screenshot/extra.png) | [tablet](screenshort/tab.png) | [mobile](screenshot/mob.png) |
+[desktop](screenshort/extra.png) | [tablet](screenshort/tab.png) | [mobile](screenshort/mob.png) |
 
 ## 💡 Key Learnings & Challenges
 - Learned that CSS selectors need a comma to group multiple elements (e.g. `h1, h2`) — without it, the rule silently fails to apply.

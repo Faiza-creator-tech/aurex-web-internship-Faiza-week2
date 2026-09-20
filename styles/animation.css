@@ -32,7 +32,7 @@ transition: transform 0.3s ease ,
 }
 .btn-view:hover{
     transform: scale(1.05);
-    background-color:#8583ec;
+    background-color:#2c786c;
 }
 .btn-view:active {
     transform: scale(0.95);
@@ -41,7 +41,7 @@ nav a{
     transition: color 0.3s ease;
 }
 nav a:hover{
-    color:#2563eb;
+    color:#f8b400;
 }
 .skills-list li {
     transition: transform 0.2s ease;

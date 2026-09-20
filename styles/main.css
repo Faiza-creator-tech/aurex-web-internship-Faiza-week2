@@ -1,3 +1,13 @@
+/* _____ COLOR VARIABLES _____ */
+:root {
+  --color-bg: #faf5e4;
+  --color-primary: #004445;
+  --color-accent: #2c786c;
+  --color-highlight: #f8b400;
+  --color-text: #1f2937;
+  --color-border: #d9cfb0;
+}
+
 /* _____ BOX MODEL SETUP_____  */
 * {
   margin: 0;
@@ -7,39 +17,40 @@
 
 body {
   line-height: 1.6;
-  color: #1f2937;
-  background-color: #f9fafb;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 h1, h2 {
   line-height: 1.2;
-  color: #8583ec; 
+  color: var(--color-primary);
 }
 a {
   text-decoration: none;
-  color: #6b7280;
+  color: var(--color-accent);
 }
 
 header {
   text-align: center;
   padding: 2.5rem 1.5rem;
-  background-color: #f9fafb;
-  border-bottom: 1px solid #cac6c6;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
 }
 
 header h1 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 header p {
-  color: #5785e2;
+  color: var(--color-accent);
 }
- /* ___flexboxx___ */
- nav{
+
+/* ___flexboxx___ */
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:#f9fafb;
-    border-bottom: 1px solid #e1def0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
     gap: 1.25rem;
     padding: 1rem;
     position: sticky;
@@ -48,8 +59,10 @@ header p {
  }
  nav a {
     font-weight: 600;
+    color: var(--color-primary);
 }
-   /* MAIN CONTENT — spacing + box model */
+
+/* MAIN CONTENT — spacing + box model */
 main {
     max-width: 800px;
     margin: 0 auto; 
@@ -57,12 +70,11 @@ main {
 }
 
 section {
-    background-color: #f3e6f5;
-    border: 1px solid #cac6c6;
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-
 }
 
 .skills-list{
@@ -72,9 +84,8 @@ section {
     list-style: none;
 }
 .skills-list li{
-    
-    background-color: #eff6ff;
-    color:#2563eb ;
+    background-color: #e6f2f0;
+    color: var(--color-accent);
     padding: 0.4rem 0.9rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -92,16 +103,15 @@ section {
     margin-bottom: 0;
 }
 
-
 .project_gallery{
-    display:grid ;
-    grid-template-columns: repeat(auto-fit ,minmax(250px, 1fr));
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
 .project_card{
     background-color:#ffffff;
-    border: 1px solid #cac6c6;
+    border: 1px solid var(--color-border);
     border-radius:8px;
     padding: 1.5rem;
     display: flex;
@@ -110,8 +120,7 @@ section {
     gap: 0.75rem;
 }
 .project_card h3{
-    color: #8583ec;
-
+    color: var(--color-primary);
 }
 .project_card .tags{
      display: flex;
@@ -119,8 +128,8 @@ section {
     gap: 0.5rem
 }
 .project_card .tags span{
-    background-color: #eff6ff;
-    color: #2563eb;
+    background-color: #e6f2f0;
+    color: var(--color-accent);
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -128,7 +137,7 @@ section {
 }
 .btn-view{
      align-self: flex-start;
-    background-color:#2563eb;
+    background-color: var(--color-accent);
     color: #fff;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
@@ -136,9 +145,7 @@ section {
     font-size: 0.9rem;
 }
 
-
 /* ______Contact Form --flexbox____ */
-
 form {
     display: flex;
     flex-direction: column;
@@ -154,22 +161,22 @@ form {
     font-weight: 600;
     font-size: 0.9rem;
 }  
-.form-group input ,
- .form-group textarea {
+.form-group input,
+.form-group textarea {
      padding: 0.9rem;           
-    border: 1px solid  #dadbdd;
+    border: 1px solid var(--color-border);
     border-radius: 6px;
-font-family: inherit;
+    font-family: inherit;
     font-size: 1rem;
 }
 
-    .form-group textarea {
+.form-group textarea {
     min-height: 100px;
     resize: vertical;
 }
 button[type="submit"] {
     align-self: flex-start;
-    background-color:#2563eb ;
+    background-color: var(--color-accent);
     color: #fff;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -180,50 +187,41 @@ button[type="submit"] {
 }
 
 /* _____Footer____ */
-
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #111827;
-    color: #f9fafb;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
     font-size: 0.9rem;
 }
 
 /* _____Responsive design with media query____*/
-
-/* For  TABLET: 768px and up */
 @media (min-width: 768px) {
     .grid-row {
-        grid-template-columns: 1fr 1fr; /* Education + Experience side by side */
+        grid-template-columns: 1fr 1fr;
     }
-
     header h1 {
         font-size: 2.5rem;
     }
 }
 
-/* DESKTOP: 1024px and up */
 @media (min-width: 1024px) {
     main {
         padding: 3rem 1.5rem;
     }
-
     section {
         padding: 2rem;
     }
 }
 
-/* SMALL MOBILE: below 480px */
 @media (max-width: 480px) {
     nav {
         gap: 0.75rem;
         padding: 0.75rem;
     }
-
     header {
         padding: 1.75rem 1rem;
     }
-
     header h1 {
         font-size: 1.6rem;
     }
